@@ -1,37 +1,75 @@
-.navbar {
-    background-color: #3c3a39;
-    height: 92px;
-    width: 375px;
-    left: 0;
-    top: 0;
-    border-radius: 0;
+* {
+    margin: 0;
+    padding: 0;
   }
   
+
+.navbar {
+    background-color: #3c3a39;
+    display: flex;
+    justify-content: space-between;
+}
+  
   .hamburger-menu {
-    height: 12px;
-    width: 18px;
-    left: 3px;
-    top: 6px;
-    border-radius: 0;
+    padding-top: 10px;
+    padding-right: 10px;
+    align-items: flex-end;
+    justify-content: space-between;
+  
   }
   
   .primary-text {
     color: #ff6b00;
     font-family: 'Crete Round', serif;
+    padding-top: 50px;
+    padding-left: 20px;
+
   }
   
   .header {
     background: #1c1a19;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+   
   }
   
   .supporting-text {
     color: #fff5e1;
     font-family: 'Roboto', sans-serif;
+    padding-top: 50px;
+    padding-left: 20px;
   }
   
   .description {
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
+    padding-top: 10px;
+    justify-content: space-evenly;
+    padding-left: 20px;
   }
   
-  
+  .flex-container-img{
+    display: flex;
+    flex-direction: row-reverse;
+   justify-content: space-between;
+  }
+
+  .hero-img{
+   margin-left: auto;
+   margin-top: auto;
+   margin-bottom: auto;
+   justify-content: flex-end;
+   padding-top: 120px;
+  }
+
+  .social-media{
+    padding-top: 30px;
+  }
+
+  .social-media-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
