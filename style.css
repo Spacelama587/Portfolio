@@ -7,10 +7,14 @@
   background-color: #3c3a39;
   display: flex;
   justify-content: space-between;
+  height: 70px;
 }
 
+.logo{
+  padding-top: 30px;
+}
 .hamburger-menu {
-  padding-top: 10px;
+  padding-top: 45px;
   padding-right: 10px;
   align-items: flex-end;
   justify-content: space-between;
@@ -21,6 +25,10 @@
   font-family: 'Crete Round', serif;
   padding-top: 50px;
   padding-left: 20px;
+  font-style: normal;
+  line-height: 100px;
+  letter-spacing: 0.37px;
+  font-size: 40px;
 }
 
 .header {
@@ -28,6 +36,7 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  width: 100%;
 }
 
 .supporting-text {
@@ -35,14 +44,25 @@
   font-family: 'Roboto', sans-serif;
   padding-top: 50px;
   padding-left: 20px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 32px;
 }
 
 .description {
   color: #fff;
   font-family: 'Poppins', sans-serif;
-  padding-top: 10px;
+  padding-top: 15px;
   justify-content: space-evenly;
   padding-left: 20px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+  width: 327px;
+  height: 123px;
+  letter-spacing: 0.37px;
+  width: 100%;
 }
 
 .flex-container-img {
@@ -52,11 +72,7 @@
 }
 
 .hero-img {
-  margin-left: auto;
-  margin-top: auto;
-  margin-bottom: auto;
   justify-content: flex-end;
-  padding-top: 120px;
 }
 
 .social-media {
@@ -68,4 +84,42 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
+}
+
+@media (max-width: 678px) {
+  
+
+  .description {
+    width: 100%;
+  }
+
+
+}
+
+@media (max-width: 375px) {
+  .primary-text {
+    font-size: 30px;
+    line-height: 70px;
+  }
+
+  .supporting-text {
+    padding-top: 20px;
+    font-size: 18px;
+    line-height: 40px;
+  }
+
+  
+  .description {
+    padding-top: 10px;
+    font-size: 12px;
+    line-height: 24px;
+    width: 100%;
+    
+  }
+
+  .hero-img{
+    clip-path: circle(50%);
+
+  }
+
 }
