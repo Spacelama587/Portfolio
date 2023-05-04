@@ -10,9 +10,10 @@
   height: 70px;
 }
 
-.logo{
+.logo {
   padding-top: 30px;
 }
+
 .hamburger-menu {
   padding-top: 45px;
   padding-right: 10px;
@@ -62,7 +63,6 @@
   width: 327px;
   height: 123px;
   letter-spacing: 0.37px;
-  width: 100%;
 }
 
 .flex-container-img {
@@ -87,13 +87,9 @@
 }
 
 @media (max-width: 678px) {
-  
-
   .description {
     width: 100%;
   }
-
-
 }
 
 @media (max-width: 375px) {
@@ -108,18 +104,14 @@
     line-height: 40px;
   }
 
-  
   .description {
     padding-top: 10px;
     font-size: 12px;
     line-height: 24px;
     width: 100%;
-    
   }
 
-  .hero-img{
+  .hero-img {
     clip-path: circle(50%);
-
   }
-
 }
