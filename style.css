@@ -7,7 +7,9 @@
   background-color: #3c3a39;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   height: 70px;
+  width: 100%;
 }
 
 .logo {
@@ -24,7 +26,7 @@
 .primary-text {
   color: #ff6b00;
   font-family: 'Crete Round', serif;
-  padding-top: 50px;
+  padding-top: 10px;
   padding-left: 20px;
   font-style: normal;
   line-height: 100px;
@@ -32,23 +34,24 @@
   font-size: 40px;
 }
 
-.header {
+.hero {
   background: #1c1a19;
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
   width: 100%;
+  background-image: url(./images/illustration-header-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
 }
 
 .supporting-text {
   color: #fff5e1;
   font-family: 'Roboto', sans-serif;
-  padding-top: 50px;
+  padding-top: 5px;
+  font-size: 18px;
+  line-height: 40px;
   padding-left: 20px;
-  font-style: normal;
   font-weight: 700;
-  font-size: 28px;
-  line-height: 32px;
 }
 
 .description {
@@ -65,28 +68,14 @@
   width: 100%;
 }
 
-.flex-container-img {
+.social-links {
+  width: fit-content;
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
+  gap: 20px;
+  padding: 2% 3%;
 }
 
-.hero-img {
-  justify-content: flex-end;
-}
-
-.social-media {
-  padding-top: 30px;
-}
-
-.social-media-icons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-@media (max-width: 678px) {
+@media (max-width: 768px) {
   .description {
     width: 100%;
   }
@@ -95,19 +84,46 @@
 @media (max-width: 375px) {
   .primary-text {
     font-size: 30px;
-    line-height: 70px;
+    line-height: 40px;
+    font-family: 'Crete Round', serif;
+    font-weight: 400;
+  }
+
+  .navbar {
+    width: 100%;
+  }
+
+  .hero {
+    width: 100%;
+    background-image: url(./images/illustration-header-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    min-height: 100vh;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    position: relative;
+  }
+
+  .social-links {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 2% 3%;
   }
 
   .supporting-text {
-    padding-top: 20px;
-    font-size: 18px;
-    line-height: 40px;
+    padding-left: 2%;
   }
 
   .description {
-    padding-top: 10px;
-    font-size: 15px;
-    line-height: 24px;
+    padding-top: 1px;
+    font-size: 16px;
+    line-height: 22px;
     width: 100%;
+    padding-left: 1%;
   }
 }
